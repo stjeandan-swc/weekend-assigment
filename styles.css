@@ -1,0 +1,148 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.grid-container {
+  display: grid;
+  width: 100vw;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.font {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Navigation styling */
+.nav-container {
+  height: 10vh;
+}
+
+#active {
+  color: #3498db;
+}
+
+.hamburger-icon {
+  display: none;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+ul li a {
+  display: inline-flex;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  margin-right: 1.3rem;
+  color: #555555;
+}
+
+ul li a:hover {
+  transform: translateY(-5px);
+}
+
+.title {
+  grid-column: 1/3;
+  justify-self: end;
+  align-self: center;
+}
+
+.nav-list {
+  grid-column: 3/11;
+  justify-self: end;
+  align-self: center;
+}
+
+.btn-get-started {
+  grid-column: 11/13;
+  justify-self: center;
+  align-self: center;
+}
+
+.btn-get-started button {
+  width: 10rem;
+  height: 3rem;
+  background-color: #3498db;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.drop-down-content {
+  display: none;
+  position: absolute;
+  min-width: 5rem;
+  padding: 0.5rem;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: center;
+}
+
+.drop-down-content a {
+  margin: 0.5rem;
+}
+
+.drop-down:hover .drop-down-content {
+  display: block;
+}
+/* End of Navigation */
+/* Home page */
+.home-center-container {
+  margin-top: 4rem;
+}
+
+.home-center-container:last-child {
+  grid-column: 7/13;
+}
+
+.home-center-container img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+/* End of Home page */
+
+@media only screen and (max-width: 998px) {
+  .nav-list {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/3;
+    justify-self: end;
+    align-self: center;
+    width: 45px;
+    height: 45px;
+    margin-top: 0.7rem;
+  }
+
+  .hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: #3498db;
+  }
+
+  .title {
+    grid-column: 5/8;
+    justify-self: center;
+  }
+
+  .btn-get-started {
+    grid-column: 9/12;
+    justify-self: start;
+  }
+}
