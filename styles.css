@@ -175,13 +175,13 @@ ul li a:hover {
   align-self: center;
 }
 
-.about-heading {
+.page-heading {
   grid-column: 1/13;
   margin-top: 2rem;
   justify-self: center;
 }
 
-.about-heading div h1 {
+.page-heading div h1 {
   font-size: 3rem;
   font-weight: 600;
 }
@@ -222,8 +222,79 @@ ul li a:hover {
 .small-screen-divider {
   display: none;
 }
-
 /* End of About */
+/* Services */
+.services-sub-heading {
+  grid-column: 1/13;
+  justify-self: center;
+  align-self: center;
+  margin: 1rem 1rem 0 1rem;
+  color: #444444;
+}
+
+.services-center-content {
+  grid-column: 1/13;
+  margin-top: 2rem;
+}
+
+.services-center-content .row {
+  justify-content: space-around;
+}
+
+.services-card {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  padding-bottom: 10rem;
+  border-radius: 15px;
+}
+
+.services-card:hover {
+  background-color: #3498db;
+}
+
+.card-icon {
+  width: 75px;
+  height: 75px;
+  margin: 1.5rem;
+  border-radius: 50%;
+  background-color: #3498db;
+}
+
+.services-card:hover .card-icon {
+  background-color: white;
+}
+
+.card-icon span {
+  position: relative;
+  top: 25%;
+  left: 25%;
+  color: white;
+  font-size: 2.25rem;
+}
+
+.services-card:hover .card-icon span {
+  color:#3498db;
+}
+
+.services-card h1 {
+  font-size: 1.5rem;
+  margin: 0 3.5rem;
+  font-weight: 600;
+}
+
+.services-card p {
+  font-size: 1rem;
+  margin: 1.5rem 3.5rem 0 3.5rem;
+  color: #555555;
+  font-weight: 500;
+}
+
+.services-card:hover p, .services-card:hover h1 {
+  color: white;
+}
+/* End of Services */
 
 @media only screen and (max-width: 998px) {
   .nav-list {
@@ -261,6 +332,12 @@ ul li a:hover {
   .home-footer {
     margin-top: 0px;
   }
+
+  /* Service */
+  .services-center-content .row {
+    flex-wrap: wrap;
+  }
+  /* End of Services*/
 }
 
 @media only screen and (max-width: 768px) {
