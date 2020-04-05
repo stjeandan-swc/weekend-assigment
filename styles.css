@@ -166,6 +166,42 @@ ul li a:hover {
 }
 
 /* End of Home page */
+/* About */
+.blue-line {
+  width: 100px;
+  height: 3px;
+  background-color: #3498db;
+  margin: 0 1rem;
+  align-self: center;
+}
+
+.about-heading {
+  grid-column: 1/13;
+  margin-top: 2rem;
+  justify-self: center;
+}
+
+.about-heading div h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.about-center-content {
+  height: 50vh;
+  margin-top: 4rem;
+}
+
+.about-center-content:first-child {
+  grid-column: 2/6;
+  justify-self: center;
+}
+
+.about-center-content:last-child {
+  grid-column: 7/12;
+  justify-self: center;
+}
+
+/* End of About */
 
 @media only screen and (max-width: 998px) {
   .nav-list {
