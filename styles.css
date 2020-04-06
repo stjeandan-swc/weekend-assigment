@@ -295,13 +295,13 @@ ul li a:hover {
   color: white;
 }
 /* End of Services */
-/* Portfolio */
+/* Features */
 
-.portfolio-content {
+.features-content {
   grid-column: 1/13;
 }
 
-.portfolio-content .row {
+.features-content .row {
   margin: 3rem 0;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -312,29 +312,65 @@ ul li a:hover {
   flex-direction: row;
 }
 
-.portfolio-item {
+.features-item {
   background-color: #f6f6f6;
   width: 300px;
   text-align: center;
 }
 
-.portfolio-item h1 {
+.features-item h1 {
   padding: 35px 0 35px 0;
   font-size: 24px;
   padding-right: 35px;
 }
 
-.portfolio-item .material-icons {
+.features-item .material-icons {
   margin-top: 24px;
   font-size: 48px;
   margin-right: 1rem;
   padding-left: 35px;
 }
-/* End of Portfolio */
+/* End of Features */
+/* Portfolio */
+.portfolio-content {
+  grid-column: 1/13;
+  margin-top: 4rem;
+}
 
-@media only screen and (max-width: 1200px) {
+.portfolio-content .row {
+  margin: 3rem 0;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  width: 35vw;
+  height: auto;
+  font-size: 1.2rem;
+}
+
+.portfolio-item p span {
+  color: #444444;
+  font-weight: 600;
+}
+
+.portfolio-item p {
+  margin-left: 2.7rem;
+}
+
+.portfolio-item h1 span {
+  font-size: 1.75rem;
+  margin-right: 1rem;
+}
+/* End of Portfolio*/
+
+@media only screen and (max-width: 1250px) {
   /* Features */
-  .portfolio-item {
+  .features-content {
+    grid-column: 3/10;
+  }
+
+  .features-item {
     margin: 1.5rem 0;
   }
   /* End of Features */
@@ -377,6 +413,18 @@ ul li a:hover {
     margin-top: 0px;
   }
 
+  /* Home page */
+  .home-center-item h2 {
+    max-height: 100px;
+  }
+  /* End Home page */
+
+  /* About page */
+  .about-center-content:last-child {
+    grid-column: 8/13;
+  }
+  /* End About page */
+
   /* Service */
   .services-center-content .row {
     flex-wrap: wrap;
@@ -407,7 +455,7 @@ ul li a:hover {
   }
 
   .home-footer {
-    margin-top: 6rem;
+    margin-top: 5rem;
   }
   /* End of Home page */
   /* About Page */
@@ -430,4 +478,28 @@ ul li a:hover {
     margin: 1rem 0;
     background-color: #3498db;
   }
+  /* End About page */
+  /* Portfolio page */
+  .portfolio-item {
+    min-width: 300px;
+  }
+  /* End Portfolio page*/
+}
+
+@media only screen and (max-width: 598px) {
+  /* Home page */
+  .home-footer {
+    margin-top: 2rem;
+  }
+
+  .home-center-item:last-child {
+    margin-top: 1.5rem;
+    margin-bottom: 0px;
+  }
+  /* End Home page */
+  /* Portfolio page */
+  .portfolio-item:nth-child(even) {
+    margin-top: 1.5rem;
+  }
+  /* End Portfolio page*/
 }
