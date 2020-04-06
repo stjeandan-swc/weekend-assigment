@@ -295,6 +295,50 @@ ul li a:hover {
   color: white;
 }
 /* End of Services */
+/* Portfolio */
+
+.portfolio-content {
+  grid-column: 1/13;
+}
+
+.portfolio-content .row {
+  margin: 3rem 0;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.item-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.portfolio-item {
+  background-color: #f6f6f6;
+  width: 300px;
+  text-align: center;
+}
+
+.portfolio-item h1 {
+  padding: 35px 0 35px 0;
+  font-size: 24px;
+  padding-right: 35px;
+}
+
+.portfolio-item .material-icons {
+  margin-top: 24px;
+  font-size: 48px;
+  margin-right: 1rem;
+  padding-left: 35px;
+}
+/* End of Portfolio */
+
+@media only screen and (max-width: 1200px) {
+  /* Features */
+  .portfolio-item {
+    margin: 1.5rem 0;
+  }
+  /* End of Features */
+}
 
 @media only screen and (max-width: 998px) {
   .nav-list {
@@ -336,6 +380,10 @@ ul li a:hover {
   /* Service */
   .services-center-content .row {
     flex-wrap: wrap;
+  }
+
+  .services-card {
+    margin-top: 1rem;
   }
   /* End of Services*/
 }
