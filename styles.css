@@ -20,6 +20,69 @@
   font-family: 'Raleway', sans-serif;
 }
 
+/* Sidenav */
+.sidenav-container {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.sidenav-item1 {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 30vw;
+  height: 100vh;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  background-color: white;
+  z-index: 2;
+}
+
+.sidenav-item2 {
+  position: relative;
+  top: 1%;
+  left: 0px;
+  width: 29vw;
+  height: 98vh;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  background-color: #3498db;
+  z-index: 2;
+}
+
+.sidenav-item3 {
+  position: relative;
+  top: 1.5%;
+  left: 0px;
+  width: 28vw;
+  height: 95vh;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  background-color: white;
+  z-index: 2;
+}
+
+.show-sidenav {
+  display: block;
+}
+
+.hide-sidenav {
+  display: none;
+}
+
+.sidenav-list {
+  position: relative;
+  top: 15%;
+  left: 15%;
+}
+
+.sidenav-list ul li {
+  padding: 1rem;
+}
+
 /* Navigation styling */
 .nav-container {
   height: 10vh;
@@ -84,7 +147,7 @@ ul li a:hover {
   min-width: 5rem;
   padding: 0.5rem;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 100;
   text-align: center;
 }
 
@@ -361,6 +424,7 @@ ul li a:hover {
 .portfolio-item h1 span {
   font-size: 1.75rem;
   margin-right: 1rem;
+  color:#3498db;
 }
 /* End of Portfolio*/
 
@@ -444,6 +508,23 @@ ul li a:hover {
 }
 
 @media only screen and (max-width: 768px) {
+  /* Sidenav */
+  .sidenav-item1 {
+    width: 35vw;
+  }
+
+  .sidenav-item2 {
+    width: 34vw;
+    top: 0.5%;
+    height: 98.5vh;
+  }
+
+  .sidenav-item3 {
+    width: 33vw;
+    top: 1%;
+    height: 97vh;
+  }
+  /* End Sidenav */
   /* Home page */
   .home-center-container:last-child {
     align-self: center;
@@ -494,6 +575,26 @@ ul li a:hover {
 }
 
 @media only screen and (max-width: 598px) {
+  /* Sidenav */
+  .sidenav-item1 {
+    width: 40vw;
+    min-width: 200px;
+  }
+
+  .sidenav-item2 {
+    width: 39vw;
+    min-width: 195px;
+    top: 0.5%;
+    height: 98.5vh;
+  }
+
+  .sidenav-item3 {
+    width: 38vw;
+    min-width: 190px;
+    top: 1%;
+    height: 97vh;
+  }
+  /* End Sidnav */
   /* Home page */
   .home-footer {
     margin-top: 2rem;

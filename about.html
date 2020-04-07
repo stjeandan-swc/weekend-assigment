@@ -9,9 +9,50 @@
   </head>
   <body>
     <section>
+      <div id="sidenav" class="sidenav-container" onclick="closeSidenav()">
+        <div class="sidenav-item1">
+          <div class="sidenav-item2">
+            <div class="sidenav-item3">
+              <div class="sidenav-list">
+                <ul>
+                  <li>
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li>
+                    <a id="active" href="about.html">About</a>
+                  </li>
+                  <li>
+                    <a href="services.html">Services</a>
+                  </li>
+                  <li>
+                    <a href="portfolio.html">Portfolio</a>
+                  </li>
+                  <li>
+                    <a href="#">Team</a>
+                  </li>
+                  <li>
+                    <a href="#">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                  <li class="drop-down">
+                    <a class="drop-down-btn" href="features.html">Features <i class="material-icons">keyboard_arrow_down</i></a>
+                    <div class="drop-down-content">
+                      <a href="#">Lorem ipsum</a><br>
+                      <a href="#">Dolor sitema</a><br>
+                      <a href="#">Nemo enim</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="row nav-container">
         <div class="grid-container">
-          <div class="hamburger-icon">
+          <div class="hamburger-icon" onclick="openSidenav()">
             <div></div>
             <div></div>
             <div></div>
@@ -101,5 +142,6 @@
         </div>
       </div>
     </section>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
