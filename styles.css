@@ -295,19 +295,24 @@ ul li a:hover {
   color: #444444;
 }
 
-.services-center-content {
-  grid-column: 1/13;
+.services-center-left {
+  grid-column: 1/7;
   margin-top: 2rem;
 }
 
-.services-center-content .row {
+.services-center-right {
+  grid-column: 7/13;
+  margin-top: 2rem;
+}
+
+.services-center-right .row, .services-center-left .row{
   justify-content: space-around;
 }
 
 .services-card {
   width: 100%;
   max-width: 300px;
-  height: auto;
+  height: 275px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
   padding-bottom: 9rem;
   border-radius: 15px;
@@ -497,7 +502,15 @@ ul li a:hover {
   /* End About page */
 
   /* Service */
-  .services-center-content .row {
+  .services-center-left {
+    grid-column: 2/7;
+  }
+
+  .services-center-right {
+    grid-column: 7/12;
+  }
+
+  .services-center-right .row, .services-center-left .row {
     flex-wrap: wrap;
   }
 
@@ -610,4 +623,19 @@ ul li a:hover {
     margin-top: 1.5rem;
   }
   /* End Portfolio page*/
+  /* Services */
+  .services-center-left {
+    grid-column: 1/7;
+  }
+
+  .services-center-right {
+    grid-column: 7/13;
+  }
+
+  .services-card {
+    width: 75%;
+    min-width: 200px;
+    height: 300px;
+  }
+  /* End Services */
 }
